@@ -1,3 +1,4 @@
+/* Google Font CDN Link */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
 * {
@@ -8,13 +9,14 @@
     scroll-behavior: smooth;
 }
 
+/* Custom Scroll Bar CSS */
 
 ::-webkit-scrollbar {
     width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #ffffff00;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -27,20 +29,7 @@
     background: #4070f4;
 }
 
-.scroll-button a {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    color: #fff;
-    background: #4070f4;
-    padding: 7px 12px;
-    ;
-    font-size: 18px;
-    border-radius: 6px;
-    box-shadow: rgba(0, 0, 0, 0.15);
-    display: none;
-}
-
+/* navbar styling */
 nav {
     position: fixed;
     width: 100%;
@@ -113,6 +102,7 @@ nav.sticky .media-icons a {
     color: #FFF;
 }
 
+/* Side Navigation Menu Button CSS */
 nav .menu-btn,
 .navbar .menu .cancel-btn {
     position: absolute;
@@ -137,52 +127,7 @@ nav.sticky .menu-btn {
     color: #fff;
 }
 
-
-@media (max-width: 750px) {
-    nav .navbar {
-        width: 90%;
-    }
-
-    nav .navbar .menu {
-        position: fixed;
-        left: -100%;
-        top: 0;
-        background: #0E2431;
-        height: 100vh;
-        max-width: 400px;
-        width: 100%;
-        padding-top: 60px;
-        flex-direction: column;
-        align-items: center;
-        transition: all 0.5s ease;
-    }
-
-    .navbar.active .menu {
-        left: 0;
-    }
-
-    nav .navbar .menu a {
-        font-size: 23px;
-        display: block;
-        color: #fff;
-        margin: 10px 0;
-    }
-
-    nav.sticky .menu a:hover {
-        color: #4070f4;
-    }
-
-    /* nav .navbar .media-icons {
-        display: none;
-    } */
-
-    nav .menu-btn,
-    .navbar .menu .cancel-btn {
-        display: block;
-    }
-}
-
-
+/* home section styling */
 .home {
     height: 100vh;
     width: 100%;
@@ -203,16 +148,6 @@ nav.sticky .menu-btn {
     justify-content: center;
 }
 
-.home .home-content p {
-    position: relative;
-    top: 10px;
-    /* text-transform: capitalize; */
-    font-weight: 500;
-    /* text-decoration: underline; */
-    font-size: 25px;
-    color: #0E2431;
-}
-
 .home .images img {
     z-index: 999;
     display: flex;
@@ -229,7 +164,7 @@ nav.sticky .menu-btn {
 }
 
 .home .text-two {
-    color: #110e31;
+    color: #0E2431;
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
@@ -237,10 +172,11 @@ nav.sticky .menu-btn {
 
 .home .text-two2 {
     color: #0E2431;
-    font-size: 80px;
-    font-weight: 800;
+    font-size: 65px;
+    font-weight: 500;
     margin-left: -3px;
 }
+
 
 .home .text-three {
     font-size: 40px;
@@ -277,13 +213,9 @@ nav.sticky .menu-btn {
     color: #4070f4;
 }
 
-@media (max-width: 1190px) {
-    section .content {
-        width: 85%;
-    }
-}
-
-
+/* About Section Styling */
+/* Those Elements Where We Have Apply Same CSS,
+ I'm Selecting Directly 'Section Tag' and 'Class'  */
 section {
     padding-top: 40px;
 }
@@ -382,24 +314,7 @@ section .button button:hover {
     color: #4070f4;
 }
 
-@media (max-width: 1200px) {
-    .about .about-details {
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .about .about-details .left {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-
-    .about-details .right {
-        width: 90%;
-        margin: 40px 0;
-    }
-}
-
+/* My methods CSS */
 .methods {
     background: #F0F8FF;
 }
@@ -460,38 +375,11 @@ section .button button:hover {
 }
 
 .methods-details .boxes .per {
-    font-size: 20px;
+    font-size: 60px;
     color: #4070f4;
 }
 
-@media (max-width: 900px) {
-    .about .left img {
-        height: 350px;
-        width: 350px;
-    }
-}
-
-@media (max-width:750px) {
-    .methods .methods-details {
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .methods-details .text {
-        width: 100%;
-        margin-bottom: 50px;
-    }
-
-    .methods-details .boxes {
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
-}
-
-
-
+/* My articles CSS */
 .articles .boxes {
     display: flex;
     flex-wrap: wrap;
@@ -543,86 +431,7 @@ section .button button:hover {
     color: #fff;
 }
 
-@media (max-width: 1000px) {
-    .articles .boxes .box {
-        margin: 20px 0;
-        width: calc(100% / 2 - 20px);
-    }
-}
-
-
-#dashboard {
-    background: #f0f8ff
-}
-
-
-.form {
-    background: #fff;
-    /* height: 80vh; */
-}
-
-
-.form .title {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 40px;
-}
-
-.form .title span {
-    color: #0E2431;
-    font-size: 30px;
-    font-weight: 600;
-    position: relative;
-    padding-bottom: 8px;
-}
-
-.form .title span::before,
-.form .title span::after {
-    content: '';
-    position: absolute;
-    height: 3px;
-    width: 100%;
-    background: #4070f4;
-    left: 0;
-    bottom: 0;
-}
-
-.form .title span::after {
-    bottom: -7px;
-    width: 70%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-input#email {
-    display: flex;
-    position: relative;
-    left: 25%;
-    bottom: -09.2px;
-    width: 350px;
-    height: 47px;
-}
-
-button.button {
-    display: flex;
-    position: relative;
-    left: 55%;
-    bottom: 55px;
-    /* width: 50px; */
-    /* height: 25px; */
-    outline: none;
-    padding: 8px 16px;
-    border-radius: 4px;
-    font-size: 25px;
-    font-weight: 400;
-    background: #4070f4;
-    color: #fff;
-    border: 2px solid transparent;
-    cursor: pointer;
-    transition: all 0.4s ease;
-}
-
-
+/* Footer CSS */
 footer {
     background: #4070f4;
     padding: 15px 0;
@@ -643,4 +452,168 @@ footer .text span a {
 
 footer .text span a:hover {
     text-decoration: underline;
+}
+
+/* Scroll TO Top Button CSS */
+.scroll-button a {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #fff;
+    background: #4070f4;
+    padding: 7px 12px;
+    ;
+    font-size: 18px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.15);
+    display: none;
+}
+
+#favDialog {
+    margin: auto;
+    width: calc(50vw - 4em);
+    padding: 2em;
+    border-radius: 1em;
+    border: none;
+    box-shadow: 5px 6px 20px black;
+}
+
+/* Responsive Media Query */
+@media (max-width: 1190px) {
+    section .content {
+        width: 85%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .about .about-details {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .about .about-details .left {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .about-details .right {
+        width: 90%;
+        margin: 40px 0;
+    }
+
+    .articles .boxes .box {
+        margin: 20px 0;
+        width: calc(100% / 2 - 20px);
+    }
+}
+
+@media (max-width: 900px) {
+    .about .left img {
+        height: 350px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 750px) {
+    nav .navbar {
+        width: 90%;
+    }
+
+    nav .navbar .menu {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        background: #0E2431;
+        height: 100vh;
+        max-width: 400px;
+        width: 100%;
+        padding-top: 60px;
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.5s ease;
+    }
+
+    .navbar.active .menu {
+        left: 0;
+    }
+
+    nav .navbar .menu a {
+        font-size: 23px;
+        display: block;
+        color: #fff;
+        margin: 10px 0;
+    }
+
+    nav.sticky .menu a:hover {
+        color: #4070f4;
+    }
+
+    nav .navbar .media-icons {
+        display: none;
+    }
+
+    nav .menu-btn,
+    .navbar .menu .cancel-btn {
+        display: block;
+    }
+
+    .home .text-two {
+        font-size: 65px;
+    }
+
+    .home .text-three {
+        font-size: 35px;
+    }
+
+    .methods .methods-details {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .methods-details .text {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .methods-details .boxes {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .articles .boxes .box {
+        margin: 20px 0;
+        width: 100%;
+    }
+
+    .contact .text {
+        width: 100%;
+    }
+
+
+    #favDialog {
+        margin: auto 2em;
+        width: calc(100vw - 4em);
+        padding: 1em;
+        border-radius: 1em;
+        border: none;
+        box-shadow: 5px 6px 20px black;
+    }
+}
+
+@media (max-width: 500px) {
+    .home .text-two {
+        font-size: 55px;
+    }
+
+    .home .text-three {
+        font-size: 33px;
+    }
+
+    .methods-details .boxes .per {
+        font-size: 50px;
+        color: #4070f4;
+    }
 }

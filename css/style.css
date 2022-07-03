@@ -617,3 +617,12 @@ footer .text span a:hover {
         color: #4070f4;
     }
 }
+
+
+#dash{
+    color: #fff;
+}
+
+#dash:hover{
+    color: #4070f4;
+}

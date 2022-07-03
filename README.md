@@ -95,7 +95,7 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 * [Html](https://html.com/)
 * [JavaScript](https://javascript.com/)
-* [CSS}(https://https://developer.mozilla.org/en-US/docs/Web/CSS/)
+* [CSS](https://https://developer.mozilla.org/en-US/docs/Web/CSS/)
 * [Bootstrap](https://getbootstrap.com)
 * [JQuery](https://jquery.com)
 

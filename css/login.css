@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;700&family=PT+Serif:wght@400;700&display=swap');
+
+*{margin:0;padding:0;}
+
+body{
+  background:#ebecf0;
+  font-family: 'Dosis', sans-serif;
+  background-image: url("https://wallpaperaccess.com/full/148235.jpg");
+}
+
+#background{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  min-height:100vh;
+  overflow:hidden;
+  z-index:-1;
+}
+
+#background .image{
+  position:absolute;
+  top:0;
+  left:0;
+  color:#b4b7ba;
+  transform:rotate(-30deg);
+  z-index:-1;
+}
+
+#background .image svg{
+  animation: imageAnim 10s linear infinite;
+}
+
+@keyframes imageAnim{
+  0%{
+    transform:scale(1) rotate(0deg);
+  }
+  50%{
+    transform:scale(1.4) rotate(180deg);
+  }
+  100%{
+    transform:scale(1) rotate(360deg);
+  }
+}
+
+#form-wrapper{
+  max-width:400px;
+  margin: 0 auto;
+  padding-bottom:100px;
+}
+
+#person{
+  float:right;
+  margin-top:-124px;
+  margin-right:0px;
+}
+
+#arm,#hand{
+  animation: arm 5s ease-in infinite;
+}
+
+@keyframes arm{
+  0%{
+    transform:rotate(0deg) translateX(0px) translateY(0px);
+  }
+  10%{
+    transform:rotate(25deg) translateX(16px) translateY(-30px);
+  }
+  20%{
+    transform:rotate(0deg) translateX(0px) translateY(0px);
+  }
+  100%{
+    transform:rotate(0deg) translateX(0px) translateY(0px);
+  }
+}
+
+form{
+  background:#fff;
+  padding: 35px 25px;
+  border-radius:20px;
+  margin-top:180px;
+  box-shadow:0 0 25px rgba(0, 0, 0, 0.05);
+}
+
+form .title{
+  display:block;
+  position:relative;
+  font-family: 'PT Serif', serif;
+  font-weight:700;
+  font-size:36px;
+  color:#000;
+  margin-bottom:35px;
+  animation: title 5s ease infinite;
+}
+
+@keyframes title{
+  0%{
+    left:225px;
+  }
+  50%{
+    left:0px;
+    animation-timing-function: ease-in;
+  }
+  100%{
+    left:225px;
+  }
+}
+
+form label{
+  display:block;
+  font-weight:500;
+  font-size:24px;
+  margin-bottom:16px;
+}
+
+form input{
+  display:block;
+  border:0;
+  border-bottom:1px solid #c8c8c8;
+  padding-bottom:8px;
+  width:100%;
+  margin-bottom:15px;
+  color:#747474;
+}
+
+form input:focus{
+  outline:0;
+  border-color:#747474;
+}
+
+form input[type=submit]{
+  background:#223743;
+  color:#fff;
+  border:0;
+  height:48px;
+  line-height:48px;
+  border-radius:20px;
+  margin-top:28px;
+  font-size:20px;
+  font-weight:700;
+  font-family: 'Dosis', sans-serif;
+  letter-spacing:2px;
+  transition:all .2s;
+}
+
+form input[type=submit]:hover{
+  cursor:pointer;
+  transform:scale(1.1);
+}
+
+form .forget{
+  display:block;
+  text-align:right;
+}
+
+form .forget a{
+  display:inline-block;
+  color:#747474;
+  text-decoration:none;
+  font-weight:500;
+  transition:all .2s;
+  transform: scale(1);
+}
+
+form .forget a:hover{
+  color:#000;
+  transform: scale(1.05);
+}
+
+form .new{
+  display:block;
+  font-weight:500;
+  text-align:center;
+  margin-top:20px;
+  color:#747474;
+}
+
+form .new a{
+  display:inline-block;
+  color:#747474;
+  text-decoration:none;
+  font-weight:700;
+  transition: all .2s;
+  transform: scale(1);
+}
+
+form .new a:hover{
+  color:#000;
+  transform: scale(1.05);
+}

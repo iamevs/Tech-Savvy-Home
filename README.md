@@ -32,7 +32,7 @@
     <a href="https://github.comiamevs/Tech-Savvy-Home"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/iamevs/Tech-Savvy-Home">View Demo</a>
+    <a href="https://github.com/iamevs/Tech-Savvy-Home">Live Demo</a>
     ·
     <a href="https://github.com/iamevs/Tech-Savvy-Home/issues">Report Bug</a>
     ·

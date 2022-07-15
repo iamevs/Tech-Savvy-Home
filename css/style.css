@@ -274,6 +274,13 @@ section .title span::after {
     object-fit: cover;
     border-radius: 12px;
 }
+#dash{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-top: -120px;
+}
 
 .about-details .right {
     width: 55%;
@@ -351,22 +358,25 @@ section .button button:hover {
 
 .methods-details .experience .exp {
     color: #0E2431;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     font-size: 18px;
     font-weight: 500;
-    margin: 0 6px;
+    /* margin: 0 6px; */
 }
 
 .methods-details .boxes {
-    width: 45%;
+    width: 40%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
 .methods-details .box {
     width: calc(100% / 2 - 20px);
     margin: 20px 0;
+}
+.methods-details .boxa img {
+    height: 350px;
+    width: 450px;
 }
 
 .methods-details .boxes .topic {
@@ -378,6 +388,7 @@ section .button button:hover {
     font-size: 60px;
     color: #4070f4;
 }
+
 
 /* My articles CSS */
 .articles .boxes {
@@ -396,11 +407,11 @@ section .button button:hover {
     cursor: default;
     transition: all 0.4s ease;
 }
-
+/* 
 .articles .boxes .box:hover {
     background: #4070f4;
     color: #fff;
-}
+} */
 
 .articles .boxes .box .icon {
     height: 50px;
@@ -414,7 +425,7 @@ section .button button:hover {
     margin: 0 auto 10px auto;
     transition: all 0.4s ease;
 }
-
+/* 
 .boxes .box:hover .icon {
     background-color: #fff;
     color: #4070f4;
@@ -429,7 +440,7 @@ section .button button:hover {
 .articles .boxes .box:hover .topic,
 .articles .boxes .box:hover p {
     color: #fff;
-}
+} */
 
 /* Footer CSS */
 footer {
